@@ -1,11 +1,22 @@
 import React from "react";
+import Header from "./components/Header";
+import ImageSlider from "./components/ImageSlider";
+import MainSection2 from "./components/MainSection2";
+import MainSection3 from "./components/MainSection3";
+import MainSection4 from "./components/MainSection4";
+import Footer from "./components/Footer";
 
-const App = () => {
+function App() {
   return (
-    <div className="text-3xl font-bold underline">
-      내가 다 해줘따 화이팅 유빈민규~
+    <div className="w-full relative z-0 bg-black min-h-screen">
+      <Header />
+      <ImageSlider />
+      <MainSection2 />
+      <MainSection3/>
+      <MainSection4 />
+      <Footer/>
     </div>
   );
-};
+}
 
 export default App;
