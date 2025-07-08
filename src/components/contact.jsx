@@ -13,11 +13,11 @@ const Contact = () => {
         <div className="flex flex-col items-center justify-between w-full xl:flex-row">
           {/* 왼쪽 텍스트 섹션 */}
           <div className="w-full xl:ml-20 xl:pb-20 xl:leading-10 xl:w-[610px] mb-10 xl:mb-0 xl:mr-20 text-center xl:text-left">
-            <span className="text-4xl leading-tight sm:leading-tight text-blue-500 xl:text-6xl font-extrabold sm:text-5xl md:text-6xl md:leading-tight"> {/* fontEB -> font-extrabold */}
+            <span className="text-4xl leading-tight sm:leading-tight text-blue-500 xl:text-6xl fontEB sm:text-5xl md:text-6xl md:leading-tight"> {/* font-extrabold -> fontEB로 수정 */}
               반가워요!
               <br />
             </span>
-            <span className="text-4xl leading-tight sm:leading-tight text-white xl:text-6xl font-extrabold whitespace-nowrap sm:text-5xl md:text-6xl md:leading-tight"> {/* fontEB -> font-extrabold */}
+            <span className="text-4xl leading-tight sm:leading-tight text-white xl:text-6xl fontEB whitespace-nowrap sm:text-5xl md:text-6xl md:leading-tight"> {/* font-extrabold -> fontEB로 수정 */}
               어떤 것을
               <br />
               도와드릴까요?
@@ -53,7 +53,7 @@ const ContactTabs = () => {
         {/* 기타 의뢰 탭 */}
         <div className="relative">
           <button
-            className={`text-xl xl:text-3xl font-medium sm:text-2xl md:text-3xl whitespace-nowrap ${ /* fontMedium -> font-medium */
+            className={`text-xl xl:text-3xl fontMedium sm:text-2xl md:text-3xl whitespace-nowrap ${ /* font-medium -> fontMedium으로 수정 */
               selectedTab === 'etc' ? 'text-white' : 'text-gray-500'
             } md:mb-4 lg:mb-0`}
             onClick={() => setSelectedTab('etc')}>
@@ -66,9 +66,9 @@ const ContactTabs = () => {
           </span>
           {/* 모바일/태블릿에서만 보이는 내용 */}
           {selectedTab === 'etc' && (
-            <div className="block xl:hidden bg-[#1C58DA] text-white p-4 rounded-lg w-10/12 max-w-md mx-auto mt-4 flex font-light text-base sm:text-lg md:text-2xl justify-center h-auto"> {/* fontLight -> font-light */}
+            <div className="block xl:hidden bg-[#1C58DA] text-white p-4 rounded-lg w-10/12 max-w-md mx-auto mt-4 flex fontLight text-base sm:text-lg md:text-2xl justify-center h-auto"> {/* font-light -> fontLight로 수정 */}
               <div className="p-4">
-                <span className="text-lg font-semibold sm:text-xl md:text-2xl">기타 의뢰</span>는 카카오톡 채널 <br /> {/* fontSB -> font-semibold */}
+                <span className="text-lg fontSB sm:text-xl md:text-2xl">기타 의뢰</span>는 카카오톡 채널 <br /> {/* font-semibold -> fontSB로 수정 */}
                 "멋쟁이사자처럼 at 성결대"
                 <br />로 문의 바랍니다.
                 <br />
@@ -82,7 +82,7 @@ const ContactTabs = () => {
         {/* 협업 문의 탭 */}
         <div className="relative">
           <button
-            className={`text-xl xl:text-3xl font-medium sm:text-2xl md:text-3xl whitespace-nowrap ${ /* fontMedium -> font-medium */
+            className={`text-xl xl:text-3xl fontMedium sm:text-2xl md:text-3xl whitespace-nowrap ${ /* font-medium -> fontMedium으로 수정 */
               selectedTab === 'Collaboration' ? 'text-white' : 'text-gray-500'
             } md:mb-6 md:mt-4 lg:mb-0 lg:mt-0`}
             onClick={() => setSelectedTab('Collaboration')}>
@@ -95,9 +95,9 @@ const ContactTabs = () => {
           </span>
           {/* 모바일/태블릿에서만 보이는 내용 */}
           {selectedTab === 'Collaboration' && (
-            <div className="block xl:hidden bg-[#34C242] text-white p-4 rounded-lg w-10/12 max-w-md mx-auto mt-4 flex font-light text-base sm:text-lg md:text-2xl justify-center h-auto"> {/* fontLight -> font-light */}
+            <div className="block xl:hidden bg-[#34C242] text-white p-4 rounded-lg w-10/12 max-w-md mx-auto mt-4 flex fontLight text-base sm:text-lg md:text-2xl justify-center h-auto"> {/* font-light -> fontLight로 수정 */}
               <div className="p-4">
-                <span className="text-lg font-semibold sm:text-xl md:text-2xl">협업 문의</span>는 "sungkyul.univ@likelion.org"
+                <span className="text-lg fontSB sm:text-xl md:text-2xl">협업 문의</span>는 "sungkyul.univ@likelion.org"
                 위 메일 주소로 문의 바랍니다.
                 <br />
                 <br />
@@ -110,7 +110,7 @@ const ContactTabs = () => {
         {/* 문의 사항 탭 */}
         <div className="relative">
           <button
-            className={`text-xl xl:text-3xl font-medium sm:text-2xl md:text-3xl whitespace-nowrap ${ /* fontMedium -> font-medium */
+            className={`text-xl xl:text-3xl fontMedium sm:text-2xl md:text-3xl whitespace-nowrap ${ /* font-medium -> fontMedium으로 수정 */
               selectedTab === 'inquiry' ? 'text-white' : 'text-gray-500'
             } md:mb-6 md:mt-4 lg:mb-0 lg:mt-0`}
             onClick={() => setSelectedTab('inquiry')}>
@@ -123,9 +123,9 @@ const ContactTabs = () => {
           </span>
           {/* 모바일/태블릿에서만 보이는 내용 */}
           {selectedTab === 'inquiry' && (
-            <div className="block xl:hidden bg-[#747474] text-white p-4 rounded-lg w-10/12 max-w-md mx-auto mt-4 flex font-light text-base sm:text-lg md:text-2xl justify-center h-auto"> {/* fontLight -> font-light */}
+            <div className="block xl:hidden bg-[#747474] text-white p-4 rounded-lg w-10/12 max-w-md mx-auto mt-4 flex fontLight text-base sm:text-lg md:text-2xl justify-center h-auto"> {/* font-light -> fontLight로 수정 */}
               <div className="p-4">
-                <span className="text-lg font-semibold sm:text-xl md:text-2xl">문의 사항</span>은 인스타그램 @likelion_sku
+                <span className="text-lg fontSB sm:text-xl md:text-2xl">문의 사항</span>은 인스타그램 @likelion_sku
                 DM으로 문의 바랍니다.
                 <br />
                 <br />
@@ -139,9 +139,9 @@ const ContactTabs = () => {
       {/* 오른쪽 내용 박스 섹션 (데스크톱에서만 보임) */}
       <div className="relative flex items-center justify-center flex-grow h-full ml-24 xl:h-auto">
         {selectedTab === 'etc' && (
-          <div className="hidden xl:block absolute top-0 transform -translate-y-40 bg-[#1C58DA] text-white p-4 rounded-lg w-60 xl:w-72 h-36 xl:h-44 flex font-light text-base xl:text-xl "> {/* fontLight -> font-light */}
+          <div className="hidden xl:block absolute top-0 transform -translate-y-40 bg-[#1C58DA] text-white p-4 rounded-lg w-60 xl:w-72 h-36 xl:h-44 flex fontLight text-base xl:text-xl "> {/* font-light -> fontLight로 수정 */}
             <div>
-              <span className="text-lg font-semibold xl:text-xl">기타 의뢰</span>는 카카오톡 채널 <br /> {/* fontSB -> font-semibold */}
+              <span className="text-lg fontSB xl:text-xl">기타 의뢰</span>는 카카오톡 채널 <br /> {/* font-semibold -> fontSB로 수정 */}
               "멋쟁이사자처럼 at 성결대"
               <br />로 문의바랍니다.
               <br />
@@ -151,9 +151,9 @@ const ContactTabs = () => {
           </div>
         )}
         {selectedTab === 'Collaboration' && (
-          <div className="hidden xl:block absolute top-0 transform -translate-y-3 bg-[#34C242] text-white p-4 rounded-lg w-60 xl:w-72 h-36 xl:h-44 flex items-center justify-center font-light text-base xl:text-xl"> {/* fontLight -> font-light */}
+          <div className="hidden xl:block absolute top-0 transform -translate-y-3 bg-[#34C242] text-white p-4 rounded-lg w-60 xl:w-72 h-36 xl:h-44 flex items-center justify-center fontLight text-base xl:text-xl"> {/* font-light -> fontLight로 수정 */}
             <div>
-              <span className="text-lg font-semibold xl:text-xl">협업 문의</span>는 "sungkyul.univ@likelion.org" <br />위 메일주소로
+              <span className="text-lg fontSB xl:text-xl">협업 문의</span>는 "sungkyul.univ@likelion.org" <br />위 메일주소로
               문의바랍니다.
               <br />
               <br />
@@ -162,9 +162,9 @@ const ContactTabs = () => {
           </div>
         )}
         {selectedTab === 'inquiry' && (
-          <div className="hidden xl:block absolute top-0 xl:top-36 bg-[#747474] text-white p-4 rounded-lg w-60 xl:w-72 h-36 xl:h-44 flex items-center justify-center text-base xl:text-xl font-light"> {/* fontLight -> font-light */}
+          <div className="hidden xl:block absolute top-0 xl:top-36 bg-[#747474] text-white p-4 rounded-lg w-60 xl:w-72 h-36 xl:h-44 flex items-center justify-center text-base xl:text-xl fontLight"> {/* font-light -> fontLight로 수정 */}
             <div>
-              <span className="text-lg font-semibold xl:text-xl">문의 사항</span>은 인스타그램 @likelion_sku DM으로 문의바랍니다.
+              <span className="text-lg fontSB xl:text-xl">문의 사항</span>은 인스타그램 @likelion_sku DM으로 문의바랍니다.
               <br />
               <br />
               감사합니다!

@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Header from "./components/Header";
 import ImageSlider from "./components/ImageSlider";
 import MainSection2 from "./components/MainSection2";
@@ -27,8 +27,11 @@ const Home = () => (
 );
 
 const App = () => {
+  const location = useLocation(); // Get current location
+  const isCyberCampus = location.pathname === "/cyberCampus"; // Check if on CyberCampus route
+
   return (
-    <div className="w-full relative z-0 bg-black min-h-screen">
+    <div className={`w-full relative z-0 min-h-screen ${isCyberCampus ? 'bg-white' : 'bg-black'}`}>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -42,7 +45,7 @@ const App = () => {
         <Route path="/project_tab" element={<ProjectTab />} />
         <Route path="/cyberCampus" element={<CyberCampus />} />
       </Routes>
-      <Footer />
+      <Footer isCyberCampus={isCyberCampus} />
     </div>
   );
 };
