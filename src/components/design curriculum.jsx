@@ -65,7 +65,7 @@ const DesignCurriculum = () => {
           <img
             src={images.track.pm_background} // images.jsx에서 가져온 pmLine.png 사용 (세로 텍스트 이미지로 가정)
             alt="Design PM Vertical Text"
-            className="h-full object-contain"
+            className="h-full object-contain "
           />
         </div>
       </div>

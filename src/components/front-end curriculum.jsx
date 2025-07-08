@@ -23,13 +23,13 @@ const FrontEndCurriculum = () => {
 
         <div className="py-24">
             <ul className="flex justify-between w-[426px] mb-2 curriUl">
-              <li className="w-[95.6px] text-center font-thin text-xl whitespace-nowrap">
+              <li className="w-[95.6px] text-center text-white font-thin text-xl whitespace-nowrap">
                 JavaScript
               </li>
-              <li className="w-[95.6px] text-center font-thin text-xl whitespace-nowrap">
+              <li className="w-[95.6px] text-center text-white font-thin text-xl whitespace-nowrap">
                 React
               </li>
-              <li className="w-[95.6px] text-center font-thin text-xl whitespace-nowrap">
+              <li className="w-[95.6px] text-center text-white font-thin text-xl whitespace-nowrap">
                 TypeScript
               </li>
             </ul>
@@ -41,7 +41,7 @@ const FrontEndCurriculum = () => {
         </div>
 
           {/* 설명 텍스트 */}
-          <div className="text-lg leading-8 font-light whitespace-nowrap"> {/* fontEL 반영 (Extra Light) */}
+          <div className="text-lg leading-8 font-light text-white whitespace-nowrap"> {/* fontEL 반영 (Extra Light) */}
             <span className="text-2xl font-bold">프론트엔드</span>는<br /> {/* fontBold 반영 */}
             웹 애플리케이션 또는 모바일 앱의 사용자 인터페이스를 담당하는
             부분입니다.

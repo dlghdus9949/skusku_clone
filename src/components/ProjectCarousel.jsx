@@ -6,13 +6,13 @@ import "slick-carousel/slick/slick-theme.css";
 const projectData = [
   {
     src: "/assets/images/Lover.png",
-    link: "https://lover.sku-sku.com/",
+    link: "https://glover.sku-sku.com/",
     title: "글LOVER",
     subtitle: "2023 글천절",
   },
   {
     src: "/assets/images/grad-calculator.png",
-    link: "https://grad.sku-sku.com/",
+    link: "https://gcc.sku-sku.com/",
     title: "졸업학점계산기",
     subtitle: "졸업요건 확인",
   },
@@ -24,19 +24,19 @@ const projectData = [
   },
   {
     src: "/assets/images/election_all.png",
-    link: "https://election-all.sku-sku.com/",
+    link: "https://vote2024.sku-sku.com/main-election",
     title: "2024 총선거",
     subtitle: "입후보자 확인 및 투표 독려",
   },
   {
     src: "/assets/images/election.png",
-    link: "https://election.sku-sku.com/",
+    link: "https://vote2024.sku-sku.com/by-election",
     title: "보궐선거",
     subtitle: "입후보자 확인 및 투표 독려",
   },
   {
     src: "/assets/images/hola.png",
-    link: "https://hola.sku-sku.com/",
+    link: "https://welcome-hola.sku-sku.com/",
     title: "새로운 안녕 올라 HOLA!",
     subtitle: "2024 신입생 오리엔테이션",
   },
@@ -70,11 +70,11 @@ const ProjectCarousel = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 800,
+    speed: 600,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2500,
+    autoplaySpeed: 2000,
     arrows: false,
     responsive: [
       {

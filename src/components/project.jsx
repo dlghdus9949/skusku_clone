@@ -10,7 +10,7 @@ const Project = () => {
       title: "Page",
       subTitle: "2025년 동아리 연합회 웹사이트",
       image: images.project.Page,
-      url: "https://www.example.com/page",
+      url: "https://page.sku-sku.com/",
       classTh: "13"
     },
     {
@@ -22,7 +22,7 @@ const Project = () => {
     },
     {
       title: "보궐선거",
-      subTitle: "입후보자 확인 및 투표 기록",
+      subTitle: "입후보자 확인 및 투표 독려",
       image: images.project.election, // Assuming this is for 보궐선거
       url: "https://www.example.com/election",
       classTh: "12"
@@ -36,7 +36,7 @@ const Project = () => {
     },
     {
       title: "2024 총선거",
-      subTitle: "입후보자 확인 및 투표 기록",
+      subTitle: "입후보자 확인 및 투표 독려",
       image: images.project.election_all, // Assuming this is for 총선거
       url: "https://www.example.com/election-all",
       classTh: "11"
@@ -50,7 +50,7 @@ const Project = () => {
     },
     {
       title: "파동",
-      subTitle: "2023 웹매거진",
+      subTitle: "2023 영암체전",
       image: images.project.파동,
       url: "https://www.example.com/padong",
       classTh: "11"
@@ -71,7 +71,7 @@ const Project = () => {
     },
     {
       title: "POOL:US",
-      subTitle: "2023 웹명함",
+      subTitle: "2023 영암축전",
       image: images.project.PoolUs,
       url: "https://www.example.com/poolus",
       classTh: "11"
@@ -102,8 +102,9 @@ const Project = () => {
       <div className="w-10/12 mx-auto pt-28">
         <div className="pb-4 mx-auto text-6xl text-center fontEB md:w-fit md:pb-12 md:pr-20 md:border-b-2 md:text-start md:mx-0">
           <div className="text-[#3B79FF] font-bold">SKU LIKELION</div>
-          <div className="text-white font-bold">PROJECT</div>
+          <div className="text-white font-bold ">PROJECT</div>
         </div>
+        <div className="hidden md:block border-b-[2px] border-white mb-4 w-[476px]"></div>
         <Project_Tabs onTabClick={handleTabClick} />
         <div className="grid w-10/12 grid-cols-1 gap-8 mx-auto mt-8 text-white md:gap-16 sm:grid-cols-2 sm:w-full lg:grid-cols-3">
           {filteredProjects.map((project, index) => (

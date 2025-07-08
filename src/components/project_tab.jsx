@@ -1,4 +1,3 @@
-// src/components/project_tab.jsx
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -22,16 +21,16 @@ const Project_Tabs = ({ onTabClick }) => {
   return (
     <>
       <div
-        className={`mt-6 text-center md:text-start ${
+        className={`mt-6 text-center md:text-start  ${
           isAdminPage ? "text-black" : "text-white"
         }`}
       >
         {tabs.map((tab) => {
-          // Define styles based on `isAdminPage` and `activeTab`
-          const baseStyle = "py-2 px-2 mr-3 text-xl border-b-[3px]";
+          const baseStyle =
+            "py-2 px-2 mr-3 text-xl border-b-[3px] transition-all duration-200 cursor-pointer";
           const activeStyle = isAdminPage
-            ? "fontBold border-b-black"
-            : "fontBold border-b-white";
+            ? "font-[700] border-b-black"
+            : "font-[700] border-b-white";
           const inactiveStyle = isAdminPage
             ? "border-b-white"
             : "border-b-black";
@@ -41,7 +40,11 @@ const Project_Tabs = ({ onTabClick }) => {
               key={`${tab.value}th`}
               className={`${baseStyle} ${
                 activeTab === tab.value ? activeStyle : inactiveStyle
-              }`}
+              } hover:font-[700]`}
+              style={{
+                fontFamily:
+                  activeTab === tab.value ? "Pretendard-Bold" : "Pretendard-Light",
+              }}
               onClick={() => handleTabClick(tab.value)}
             >
               {tab.name}
