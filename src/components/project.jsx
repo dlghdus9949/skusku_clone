@@ -17,63 +17,63 @@ const Project = () => {
       title: "퍼즐 물품 대여 서비스",
       subTitle: "동아리원들의 편의성 확대",
       image: images.project.Puzzle,
-      url: "https://www.example.com/puzzle",
+      url: "https://sku-sku.com/project",
       classTh: "12"
     },
     {
       title: "보궐선거",
       subTitle: "입후보자 확인 및 투표 독려",
       image: images.project.election, // Assuming this is for 보궐선거
-      url: "https://www.example.com/election",
+      url: "https://vote2024.sku-sku.com/by-election",
       classTh: "12"
     },
     {
       title: "새로운 안녕 올라 HOLA!",
       subTitle: "2024 신입생 오리엔테이션",
       image: images.project.hola,
-      url: "https://www.example.com/hola",
+      url: "https://welcome-hola.sku-sku.com/",
       classTh: "12"
     },
     {
       title: "2024 총선거",
       subTitle: "입후보자 확인 및 투표 독려",
       image: images.project.election_all, // Assuming this is for 총선거
-      url: "https://www.example.com/election-all",
+      url: "https://vote2024.sku-sku.com/main-election",
       classTh: "11"
     },
     {
       title: "글LOVER",
       subTitle: "2023 글lover",
       image: images.project.글Lover,
-      url: "https://www.example.com/gullover",
+      url: "https://glover.sku-sku.com/",
       classTh: "11"
     },
     {
       title: "파동",
       subTitle: "2023 영암체전",
       image: images.project.파동,
-      url: "https://www.example.com/padong",
+      url: "https://wave-renew.sku-sku.com/",
       classTh: "11"
     },
     {
       title: "SKETCH VILLAGE",
       subTitle: "2023 동아리 페스티벌",
       image: images.project.sketchVillage,
-      url: "https://www.example.com/sketchvillage",
+      url: "https://sketch39.sku-sku.com/",
       classTh: "11"
     },
     {
       title: "졸업학점계산기",
       subTitle: "졸업요건 확인",
       image: images.project.졸업학점계산기,
-      url: "https://www.example.com/calculator",
+      url: "https://gcc.sku-sku.com/",
       classTh: "11"
     },
     {
       title: "POOL:US",
       subTitle: "2023 영암축전",
       image: images.project.PoolUs,
-      url: "https://www.example.com/poolus",
+      url: "https://poolus.sku-sku.com/",
       classTh: "11"
     },
   ];

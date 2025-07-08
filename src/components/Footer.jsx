@@ -1,12 +1,12 @@
 import React from "react";
 
-const Footer = () => {
+const Footer = ({ isCyberCampus }) => {
   return (
-    <div className="leading-7 container w-11/12 mx-auto border-t-[1px] border-[#626262] py-12 px-12">
+    <div className={`leading-7 container w-11/12 mx-auto border-t-[1px] py-12 px-12 ${isCyberCampus ? 'bg-white border-[#C9C9C9]' : 'bg-black border-[#626262]'}`}>
       <div className="flex flex-col mb-10">
         <span className="text-2xl fontBlack text-[#3B79FF]">LIKELION SKU</span>
-        <span className="fontLight text-white">주소 : 경기도 안양시 만안구 성결대학로 53</span>
-        <span className="flex items-center fontLight text-white">
+        <span className={`fontLight ${isCyberCampus ? 'text-black' : 'text-white'}`}>주소 : 경기도 안양시 만안구 성결대학로 53</span>
+        <span className={`flex items-center fontLight ${isCyberCampus ? 'text-black' : 'text-white'}`}>
           <svg
             stroke="currentColor"
             fill="currentColor"
@@ -41,7 +41,7 @@ const Footer = () => {
             <img src="/assets/images/kakao.png" alt="kakao" className="mx-1" />
           </a>
         </div>
-        <div className="fontSB text-white">
+         <div className={`fontSB ${isCyberCampus ? 'text-black' : 'text-white'}`}>
           @2025_LIKEL<a className="cursor-auto" href="/admin/main">IONSKU 13th</a>
         </div>
       </div>
