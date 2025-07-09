@@ -143,7 +143,7 @@ const ContactTabs = () => {
             <div>
               <span className="text-lg fontSB xl:text-xl">기타 의뢰</span>는 카카오톡 채널 <br /> {/* font-semibold -> fontSB로 수정 */}
               "멋쟁이사자처럼 at 성결대"
-              <br />로 문의바랍니다.
+              <br />로 문의 바랍니다.
               <br />
               <br />
               감사합니다!
@@ -154,7 +154,7 @@ const ContactTabs = () => {
           <div className="hidden xl:block absolute top-0 transform -translate-y-3 bg-[#34C242] text-white p-4 rounded-lg w-60 xl:w-72 h-36 xl:h-44 flex items-center justify-center fontLight text-base xl:text-xl"> {/* font-light -> fontLight로 수정 */}
             <div>
               <span className="text-lg fontSB xl:text-xl">협업 문의</span>는 "sungkyul.univ@likelion.org" <br />위 메일주소로
-              문의바랍니다.
+              문의 바랍니다.
               <br />
               <br />
               감사합니다!
@@ -164,7 +164,7 @@ const ContactTabs = () => {
         {selectedTab === 'inquiry' && (
           <div className="hidden xl:block absolute top-0 xl:top-36 bg-[#747474] text-white p-4 rounded-lg w-60 xl:w-72 h-36 xl:h-44 flex items-center justify-center text-base xl:text-xl fontLight"> {/* font-light -> fontLight로 수정 */}
             <div>
-              <span className="text-lg fontSB xl:text-xl">문의 사항</span>은 인스타그램 @likelion_sku DM으로 문의바랍니다.
+              <span className="text-lg fontSB xl:text-xl">문의 사항</span>은 인스타그램 @likelion_sku DM으로 문의 바랍니다.
               <br />
               <br />
               감사합니다!

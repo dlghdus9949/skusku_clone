@@ -4,20 +4,22 @@ import icon1 from "/assets/images/icon1.png";
 import icon2 from "/assets/images/icon2.png";
 import icon3 from "/assets/images/icon3.png";
 import bgImage from "/assets/images/mainP2.png";
-
+// AOS 라이브러리
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const MainSection2 = () => {
+    // AOS 초기화
   useEffect(() => {
     AOS.init({
-      duration: 1200, // 애니메이션 시간 1.2초
+      duration: 1200, // 애니메이션 시간 1.2초 (ms)
       easing: 'ease-out-cubic',
-      once: false,
+      once: false, //스크롤 시 반복 실행 (ture일땐 1번만)
     });
   }, []);
 
   return (
+    // 배경 이미지,섹션 전체 래퍼
     <div
       id="main2"
       data-aos="fade-up"    // 아래에서 위로 올라오는 효과
@@ -29,6 +31,7 @@ const MainSection2 = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
+        {/*내용 영ㅇ역*/}
       <div className="flex flex-col items-center w-full min-h-screen text-xl text-center justify-evenly fontThin text-white relative z-10">
         <p className="pt-5 text-[22px]">
           <span className="fontMedium">성결대학교 멋쟁이사자처럼</span>은
@@ -44,7 +47,7 @@ const MainSection2 = () => {
             <br />
             <span className="fontMedium">3가지 방향성</span>
           </p>
-
+        {/* 카드 그리드 3개*/}
           <div className="grid w-full grid-cols-1 gap-8 pt-16 xl:grid-cols-3 xl:gap-32">
             <div className="flex flex-col items-center">
               <img src={icon1} alt="자기주도성" className="mb-4" />

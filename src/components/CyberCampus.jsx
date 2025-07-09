@@ -5,14 +5,17 @@ import { Link } from 'react-router-dom';
 const CyberCampus = () => {
   return (
     <div className="min-h-screen App bg-white text-black">
+        {/* 전체 컨테이너 */}
       <div>
         <div className="container flex flex-col mx-auto text-center lg:mb-32 lg:min-h-screen">
+          {/* 타이틀 */}
           <div className="flex flex-col items-center justify-center pt-40 fontEB">
             <div className="text-[#3B79FF] my-2 ml-1 text-7xl">LIKELION SKU</div>
             <div className="mr-1 text-6xl">사이버캠퍼스</div>
           </div>
+          {/* 섭 타이틀*/}
           <div className="my-16 text-base font-pretendard font-normal">성결대학교 아기사자들을 위한 학습 공간입니다.</div>
-
+            {/* 프,백,디 버튼 각각 링크로 trakc의 f,b,d 페이지로 넘어가게 */}
           <div className="flex flex-col lg:flex-row justify-center mx-auto text-[28px] fontBold flex-wrap">
             <Link to="/frontend">
               <button className="bg-gradient-to-r from-[#FFE3CF] to-[#FF8C3A] mb-24 mx-8 w-[400px] shadow-lg py-20 px-12 rounded-xl duration-500 hover:translate-y-[-5px] text-start lg:py-16 lg:px-8 lg:w-[300px]">

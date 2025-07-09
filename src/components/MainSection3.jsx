@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const MainSection3 = () => {
+    //mainsec2랑 똑같은 AOS
   useEffect(() => {
     AOS.init({
       duration: 1200,
@@ -12,10 +13,12 @@ const MainSection3 = () => {
   }, []);
 
   return (
+    //전체 섹션 div
     <div
       className="relative w-full main3 snap-section"
-      data-aos="fade-up"
+      data-aos="fade-up" //아래에서 위로 등장
     >
+        {/* 배경으로 likelion 글로고 이미지 고정 */}
       <div className="absolute flex items-start justify-center w-full">
         <img
           src="assets/images/likelion.png"
@@ -23,6 +26,7 @@ const MainSection3 = () => {
           className="w-1/4 py-24 z-0 xl:w-1/6"
         />
       </div>
+        {/* 텍스트 +커리큘럼 이미지 */}
       <div className="flex flex-col items-center justify-center h-full py-20 text-[22px] text-center fontRegular">
         <div className="flex flex-col justify-around mb-32 h-1/5">
           <div className="pb-28">
@@ -47,13 +51,14 @@ const MainSection3 = () => {
         </div>
   
         <img
-  src="assets/images/schedule.png"
-  alt="멋사 스케줄"
-  className="w-4/5 xl:w-3/5 z-[2]"
-  data-aos="fade"         // 👈 서서히 등장
-  data-aos-delay="1000"   // 👈 1초 후 시작
-  data-aos-duration="1200" // 👈 1.2초간 서서히 등장
-/>
+            src="assets/images/schedule.png"
+            alt="멋사 스케줄"
+            className="w-4/5 xl:w-3/5 z-[2]"
+            data-aos="fade"         //  서서히 등장
+            data-aos-delay="1000"   // 1초 후 시작
+            data-aos-duration="1200" // 1.2초간 서서히 등장
+            data-aos-once="true"  
+            />
 
 
       </div>
